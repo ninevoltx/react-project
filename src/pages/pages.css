@@ -1,0 +1,27 @@
+.maindiv {
+    width: 100%;
+}
+
+.cell {
+    width: calc(50% - 20px); /* 50% width minus margins and padding */
+    height: 600px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    float: left; /* Ensure divs are placed side by side */
+}
+
+.headline {
+    font-family: Verdana, sans-serif;
+}
+
+.img1 {
+    display: block;
+    margin: 0 auto; /* Center the image */
+}
+
+p {
+    font-family: Verdana, sans-serif;
+}

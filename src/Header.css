@@ -1,0 +1,140 @@
+.header-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  
+  .banner {
+    height: 150px;
+    background: linear-gradient(to bottom, black, gold);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .menu {
+    height: 40px;
+    background-color: #7e6116;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: top 0.3s; /* Add smooth transition for the fixed effect */
+  }
+  
+  .menu.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  .menu-left {
+    display: flex;
+  }
+  
+  .menuItem {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .dropdown {
+    background-color: 4d3c0f;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 170%;
+    display: none;
+    flex-direction: column;
+  }
+  
+  .menuItem:hover .dropdown {
+    display: flex;
+  }
+  
+  .menuItem.clicked .dropdown {
+    display: flex;
+  }
+  
+  .dropdownItem {
+    background-color: #524112;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .dropdownItem:hover {
+    background-color: #7e6116;
+  }
+  .search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10px;
+  }
+  
+  input {
+    padding: 5px;
+  }
+  .mobile-menu {
+  display: none;
+}
+
+.mobile-menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+
+.mobile-dropdown {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 10px;
+}
+
+.mobile-dropdown-item {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.movies-dropdown {
+  position: relative;
+}
+
+.movies-link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
+
+.movies-submenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  padding: 10px;
+}
+
+.submenu-item {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+.movies-link.active {
+  color: gold;
+}
+.logo {
+  height: 140px;
+  width: auto;
+  float: left;
+  margin-left: 10px;
+}
